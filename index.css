@@ -1,0 +1,184 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background: #0b1220;
+    color: #e5e7eb;
+}
+
+.header {
+    text-align: center;
+    padding: 25px;
+    background: #111827;
+    border-bottom: 1px solid #1f2937;
+}
+
+.header h1 {
+    font-size: 30px;
+}
+
+.btn-sistema {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 12px 20px;
+    background: linear-gradient(135deg, #38bdf8, #0ea5e9);
+    color: #0b1220;
+    font-weight: bold;
+    border-radius: 12px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn-sistema:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(56, 189, 248, 0.5);
+}
+
+.hero {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.hero h2 {
+    font-size: 26px;
+    margin-bottom: 10px;
+    color: #38bdf8;
+}
+
+.hero p {
+    max-width: 800px;
+    margin: auto;
+    color: #cbd5e1;
+    line-height: 1.6;
+}
+
+.section {
+    padding: 20px;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 22px;
+    margin: 20px 0;
+    color: #38bdf8;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: #111827;
+    padding: 20px;
+    border-radius: 16px;
+    border: 1px solid #1f2937;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    border-color: #38bdf8;
+}
+
+.card h3 {
+    color: #38bdf8;
+    margin-bottom: 10px;
+}
+
+.card ul {
+    list-style: none;
+}
+
+.card ul li {
+    padding: 6px 0;
+    border-bottom: 1px solid #1f2937;
+    color: #cbd5e1;
+}
+
+/* FOOTER */
+.footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+    border-top: 1px solid #1f2937;
+    color: #64748b;
+}
+
+@media (max-width: 1024px) {
+
+    header {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
+    nav {
+        margin-top: 10px;
+    }
+
+    .hero {
+        padding: 30px 15px;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .card {
+        text-align: center;
+    }
+}
+
+@media (max-width: 600px) {
+
+    body {
+        font-size: 14px;
+    }
+
+    header h1 {
+        font-size: 20px;
+    }
+
+    .btn-sistema {
+        width: 100%;
+        text-align: center;
+        padding: 12px;
+    }
+
+    .hero h2 {
+        font-size: 20px;
+    }
+
+    .hero p {
+        font-size: 14px;
+        padding: 0 10px;
+    }
+
+    .section-title {
+        font-size: 18px;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .card {
+        padding: 15px;
+    }
+
+    .card ul li {
+        font-size: 13px;
+    }
+
+    footer {
+        font-size: 12px;
+    }
+}
